@@ -1,0 +1,27 @@
+﻿<Window x:Class="dognhai.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dognhai"
+        mc:Ignorable="d"
+        Title="打开文件" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="58,194,0,0" TextWrapping="Wrap" Text="目录" VerticalAlignment="Top" Height="25" Width="64"/>
+        <TextBox  x:Name="location" HorizontalAlignment="Left" Height="41" Margin="48,222,0,0" TextWrapping="Wrap" Text="E:\new mb\Modules\my_mod\Module_system 1.171\" VerticalAlignment="Top" Width="212"/>
+        <ComboBox Name="filename" IsEditable="True" HorizontalAlignment="Left" Margin="295,222,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="ID_" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="header_" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="module_" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox Name="suffix" IsEditable="True"   HorizontalAlignment="Left" Margin="476,222,0,0" VerticalAlignment="Top" Width="130" Height="23">
+            <ComboBoxItem Content="troops" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="factions" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="parties" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="party_templates" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Button   Content="打开" HorizontalAlignment="Left" Margin="646,226,0,0" VerticalAlignment="Top" Width="90" Height="21" Click="Button_Click"/>
+
+    </Grid>
+</Window>
